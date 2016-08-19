@@ -25,6 +25,8 @@ loop do
     http_request += line 
   end
 
+  STDERR.puts "HTTP REQUEST: #{http_request}"
+
   # Grab the security key from the headers. If one isn't present, close the connection.
   if matches = http_request.match(/^Sec-WebSocket-Key: (\S+)/)
     websocket_key = matches[1]
