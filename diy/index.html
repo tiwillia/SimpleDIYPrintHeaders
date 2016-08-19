@@ -5,7 +5,7 @@
 </head>
 <body>
   <script>
-    var tehaddress = "ws://".concat(getenv('$OPENSHIFT_DIY_IP'), ":8080");
+    var tehaddress = "ws://".concat(getenv('$OPENSHIFT_DIY_IP'), ":8000");
     var exampleSocket = new WebSocket(tehaddress);
     var exampleSocket = new WebSocket(address);
     exampleSocket.onopen = function (event) {

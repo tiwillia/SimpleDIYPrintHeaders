@@ -11,7 +11,7 @@ require 'digest/sha1'
 #server = HTTPServer.new(config)
 
 
-server = TCPServer.new(ARGV[0], 8080)
+server = TCPServer.new(ARGV[0], 8000)
 
 loop do
 
